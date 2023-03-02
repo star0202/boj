@@ -1,4 +1,4 @@
-n=int(input())
-sum=[]
-asdf=list(map(int,input().split(" ")))
+n = int(input())
+sum = []
+asdf = list(map(int, input().split(" ")))
 print(asdf)

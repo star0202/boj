@@ -1,4 +1,5 @@
 import sys
+
 n = int(sys.stdin.readline().rstrip())
 c = [0] * 10001
 for _ in range(n):

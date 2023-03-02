@@ -1,5 +1,6 @@
 from heapq import heappop, heappush
 from sys import stdin
+
 input = stdin.readline
 
 n = int(input())
@@ -14,7 +15,7 @@ else:
     while len(deck) > 1:
         comp1 = heappop(deck)
         comp2 = heappop(deck)
-        result += comp1+comp2
-        heappush(deck, comp1+comp2)
+        result += comp1 + comp2
+        heappush(deck, comp1 + comp2)
 
     print(result)

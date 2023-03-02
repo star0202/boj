@@ -1,7 +1,7 @@
 a = int(input())
 b = int(input())
 c = int(input())
-n = a*b*c
+n = a * b * c
 l = list(str(n))
 l2 = []
 for x in range(0, 10):

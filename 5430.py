@@ -1,9 +1,10 @@
 from sys import stdin
 from collections import deque
+
 input = stdin.readline
 
 t = int(input())
- 
+
 for _ in range(t):
     func = input()
     n = int(input())
@@ -13,7 +14,7 @@ for _ in range(t):
     else:
         arr = deque(input().rstrip()[1:-1].split(","))
     flag = False
- 
+
     for cmd in func:
         if cmd == "R":
             flag = not flag
@@ -26,7 +27,7 @@ for _ in range(t):
                     arr.pop()
                 else:
                     arr.popleft()
- 
+
     else:
         if flag:
             arr.reverse()

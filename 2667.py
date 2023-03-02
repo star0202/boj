@@ -1,11 +1,13 @@
 from sys import stdin
 from collections import deque
+
 input = stdin.readline
 
 n = int(input())
 arr = [list(map(int, input().rstrip())) for _ in range(n)]
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
+
 
 def bfs(x, y):
     cnt = 1
@@ -22,6 +24,7 @@ def bfs(x, y):
                 q.append([nx, ny])
                 cnt += 1
     return cnt
+
 
 cnt = [bfs(x, y) for x in range(n) for y in range(n) if arr[x][y] == 1]
 cnt.sort()

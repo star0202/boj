@@ -1,4 +1,5 @@
 import datetime
+
 h, m = map(int, input().split())
 c = int(input())
 n = datetime.timedelta(hours=h, minutes=m)

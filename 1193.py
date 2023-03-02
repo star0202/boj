@@ -1,4 +1,5 @@
 from sys import stdin
+
 n = int(stdin.readline())
 k = 0
 sum = 0

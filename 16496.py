@@ -1,5 +1,6 @@
 from functools import cmp_to_key
 from sys import stdin
+
 input = stdin.readline
 
 input()

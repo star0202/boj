@@ -1,11 +1,14 @@
 from sys import stdin
 from heapq import heappop, heappush
+
 input = stdin.readline
+
 
 def syncq(q):
     while q and not visited[q[0][1]]:
         heappop(q)
     return q
+
 
 for _ in range(int(input())):
     t = int(input())

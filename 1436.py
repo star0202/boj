@@ -1,5 +1,6 @@
 n = int(input())
-    
+
+
 def s():
     n = 1
     while True:
@@ -7,8 +8,10 @@ def s():
             n += 1
         else:
             n += 1
-            if '666' in str(n - 1):
-                yield n - 1                      
+            if "666" in str(n - 1):
+                yield n - 1
+
+
 j = 1
 for i in s():
     if j == n:

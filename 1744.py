@@ -1,4 +1,5 @@
 from sys import stdin
+
 input = stdin.readline
 
 n = int(input())
@@ -19,16 +20,16 @@ while len(p) > 1:
     a = p.pop()
     b = p.pop()
     if a == 1 or b == 1:
-        r += a+b
+        r += a + b
     else:
-        r += a*b
+        r += a * b
 if p:
     r += p[0]
 
 while len(n) > 1:
     a = n.pop()
     b = n.pop()
-    r += a*b
+    r += a * b
 if n:
     r += n[0]
 

@@ -1,4 +1,5 @@
 from sys import stdin
+
 input = stdin.readline
 
 n, m = map(int, input().split())
@@ -8,6 +9,7 @@ dx = [1, -1, 0, 0]
 dy = [0, 0, 1, -1]
 ans = 0
 max_val = max(map(max, arr))
+
 
 def dfs(x, y, shp, tot):
     global ans
@@ -27,6 +29,7 @@ def dfs(x, y, shp, tot):
             visited[nx][ny] = True
             dfs(nx, ny, shp + 1, tot + arr[nx][ny])
             visited[nx][ny] = False
+
 
 for x in range(n):
     for y in range(m):

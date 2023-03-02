@@ -1,5 +1,6 @@
 from heapq import heappop, heappush
 from sys import stdin
+
 input = stdin.readline
 
 n = int(input())
@@ -13,4 +14,4 @@ for _ in range(n):
         else:
             print(heappop(heap)[1])
     else:
-        heappush(heap, (abs(i),i))
+        heappush(heap, (abs(i), i))

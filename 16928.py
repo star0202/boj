@@ -1,13 +1,15 @@
 from sys import stdin
 from collections import deque
+
 input = stdin.readline
 
 n, m = map(int, input().split())
 arr = [i for i in range(101)]
-for _ in range(n+m):
+for _ in range(n + m):
     a, b = map(int, input().split())
     arr[a] = b
 visited = [False] * 101
+
 
 def bfs():
     q = deque([1])
@@ -24,6 +26,7 @@ def bfs():
                 q.append(cnt)
                 if cnt == 100:
                     return
-                
+
+
 bfs()
 print(visited[100] - 1)

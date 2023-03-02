@@ -1,9 +1,10 @@
 from sys import stdin
+
 input = stdin.readline
 x = []
 y = []
 for i in range(3):
-    a, b = map(int,input().rstrip().split())
+    a, b = map(int, input().rstrip().split())
     if a in x:
         x.remove(a)
     else:
