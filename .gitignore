@@ -1,6 +1,2 @@
-.vscode
-obj
-*.exe
 *.pyc
-*.o
 wip
